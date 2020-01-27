@@ -232,8 +232,9 @@ bool MarlinUI::detected() { return true; }
   void MarlinUI::show_bootscreen() {
     #if ENABLED(SHOW_CUSTOM_BOOTSCREEN)
       show_custom_bootscreen();
+    #else //MD
+      show_marlin_bootscreen();
     #endif
-    show_marlin_bootscreen();
   }
 
 #endif // SHOW_BOOTSCREEN

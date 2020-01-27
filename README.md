@@ -1,5 +1,14 @@
 # Marlin 3D Printer Firmware
 
+Forked from: [Marlin_SKR_E3_Mini_12_512K](https://github.com/steenerson/Marlin_SKR_E3_Mini_12_512K) who unlocked the 512k on the SKR E3 Mini 1.2 512k
+
+Which is forked from: [Marlin](https://github.com/MarlinFirmware/Marlin)
+
+I try to keep it synced with Marlin for latest updates
+
+# Marlin 3D Printer Firmware
+
+[![Build Status](https://travis-ci.org/MarlinFirmware/Marlin.svg?branch=bugfix-2.0.x)](https://travis-ci.org/MarlinFirmware/Marlin)
 ![GitHub](https://img.shields.io/github/license/marlinfirmware/marlin.svg)
 ![GitHub contributors](https://img.shields.io/github/contributors/marlinfirmware/marlin.svg)
 ![GitHub Release Date](https://img.shields.io/github/release-date/marlinfirmware/marlin.svg)
