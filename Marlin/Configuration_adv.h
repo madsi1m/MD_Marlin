@@ -2092,7 +2092,7 @@
 
   #if AXIS_IS_TMC(E0)
     #define E0_CURRENT    400 //MD 650
-    #define E0_MICROSTEPS  16
+    #define E0_MICROSTEPS   4 //MD 16
     #define E0_RSENSE    0.11
     #define E0_CHAIN_POS   -1
   #endif
@@ -2818,10 +2818,10 @@
  * Add G-codes M810-M819 to define and run G-code macros.
  * Macros are not saved to EEPROM.
  */
-//#define GCODE_MACROS
+#define GCODE_MACROS
 #if ENABLED(GCODE_MACROS)
   #define GCODE_MACROS_SLOTS       5  // Up to 10 may be used
-  #define GCODE_MACROS_SLOT_SIZE  50  // Maximum length of a single macro
+  #define GCODE_MACROS_SLOT_SIZE  120 //MD 50  // Maximum length of a single macro
 #endif
 
 /**
