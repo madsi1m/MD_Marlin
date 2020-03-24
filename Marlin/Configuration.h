@@ -132,7 +132,7 @@
 #endif
 
 // Name displayed in the LCD "Ready" message and Info menu
-#define CUSTOM_MACHINE_NAME "MD Ender-3"
+#define CUSTOM_MACHINE_NAME "MD Ender 3"
 
 // Printer's unique ID, used by some programs to differentiate between machines.
 // Choose your own or use a service like http://www.uuidgenerator.net/version4
@@ -1482,7 +1482,7 @@
 #define PREHEAT_1_FAN_SPEED     0 //MD // Value from 0 to 255
 
 #define PREHEAT_2_LABEL       "PLA"
-#define PREHEAT_2_TEMP_HOTEND 210 //MD
+#define PREHEAT_2_TEMP_HOTEND 198 //MD
 #define PREHEAT_2_TEMP_BED     65 //MD
 #define PREHEAT_2_FAN_SPEED     0 //MD // Value from 0 to 255
 
@@ -1544,7 +1544,7 @@
  * Attention: EXPERIMENTAL. G-code arguments may change.
  *
  */
-//#define NOZZLE_CLEAN_FEATURE
+#define NOZZLE_CLEAN_FEATURE //MD uncommented
 
 #if ENABLED(NOZZLE_CLEAN_FEATURE)
   // Default number of pattern repetitions
