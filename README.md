@@ -6,6 +6,8 @@ Which is forked from: [Marlin](https://github.com/MarlinFirmware/Marlin)
 
 I try to keep it synced with Marlin for latest updates
 
+Also a good guide: https://www.reddit.com/r/ender3/comments/e894j7/marlin_20x_guide_for_ender_3_using_skr_mini_e3_v12/
+
 # Marlin 3D Printer Firmware
 
 [![Build Status](https://travis-ci.org/MarlinFirmware/Marlin.svg?branch=bugfix-2.0.x)](https://travis-ci.org/MarlinFirmware/Marlin)

@@ -1713,9 +1713,9 @@
 // The number of linear motions that can be in the plan at any give time.
 // THE BLOCK_BUFFER_SIZE NEEDS TO BE A POWER OF 2 (e.g. 8, 16, 32) because shifts and ors are used to do the ring-buffering.
 #if ENABLED(SDSUPPORT)
-  #define BLOCK_BUFFER_SIZE 16 // SD,LCD,Buttons take more memory, block buffer needs to be smaller
+  #define BLOCK_BUFFER_SIZE 32 //MD 15 // SD,LCD,Buttons take more memory, block buffer needs to be smaller
 #else
-  #define BLOCK_BUFFER_SIZE 16 // maximize block buffer
+  #define BLOCK_BUFFER_SIZE 32 //MD 15 // maximize block buffer
 #endif
 
 // @section serial
@@ -2106,7 +2106,7 @@
   #endif
 
   #if AXIS_IS_TMC(E0)
-    #define E0_CURRENT    650
+    #define E0_CURRENT    500 //MD 650
     #define E0_MICROSTEPS  16
     #define E0_RSENSE    0.11
     #define E0_CHAIN_POS   -1
@@ -2279,16 +2279,16 @@
    * STEALTHCHOP_(XY|Z|E) must be enabled to use HYBRID_THRESHOLD.
    * M913 X/Y/Z/E to live tune the setting
    */
-  //MD #define HYBRID_THRESHOLD //MD uncommented
+  #define HYBRID_THRESHOLD //MD uncommented
 
-  #define X_HYBRID_THRESHOLD     180 //MD 100  // [mm/s]
-  #define X2_HYBRID_THRESHOLD    180 //MD 100
-  #define Y_HYBRID_THRESHOLD     180 //MD 100
-  #define Y2_HYBRID_THRESHOLD    180 //MD 100
-  #define Z_HYBRID_THRESHOLD      10 //MD   3
-  #define Z2_HYBRID_THRESHOLD     10 //MD   3
-  #define Z3_HYBRID_THRESHOLD     10 //MD   3
-  #define Z4_HYBRID_THRESHOLD     10 //MD   3
+  #define X_HYBRID_THRESHOLD     100  // [mm/s]
+  #define X2_HYBRID_THRESHOLD    100
+  #define Y_HYBRID_THRESHOLD     100
+  #define Y2_HYBRID_THRESHOLD    100
+  #define Z_HYBRID_THRESHOLD       3
+  #define Z2_HYBRID_THRESHOLD      3 
+  #define Z3_HYBRID_THRESHOLD      3
+  #define Z4_HYBRID_THRESHOLD      3
   #define E0_HYBRID_THRESHOLD     30
   #define E1_HYBRID_THRESHOLD     30
   #define E2_HYBRID_THRESHOLD     30
